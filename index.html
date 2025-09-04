@@ -8,85 +8,203 @@
 </head>
 <body class="font-sans text-gray-800">
 
-<!-- Navbar -->
-<header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-  <nav class="container mx-auto flex justify-between items-center py-4 px-6 max-w-6xl">
-    <!-- Logo -->
-    <div class="flex items-center space-x-3">
-      <img src="freepik__logo-for-cinta-coding-team-in-graffiti-art-featuri__68313-removebg-preview.png" 
-           alt="Logo" class="h-10 w-10 object-contain">
-      <h1 class="text-2xl font-bold text-teal-700">Cinta Coding Photography</h1>
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6 max-w-6xl">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <img src="freepik__logo-for-cinta-coding-team-in-graffiti-art-featuri__68313-removebg-preview.png" 
+             alt="Logo" 
+             class="h-10 w-10 object-contain">
+        <h1 class="text-2xl font-bold text-teal-700">Cinta Coding Photography</h1>
+      </div>
+
+      <!-- Menu Desktop -->
+      <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <li><a href="#home" class="hover:text-teal-600">Beranda</a></li>
+        <li><a href="#about" class="hover:text-teal-600">Tentang</a></li>
+        <li><a href="#portfolio" class="hover:text-teal-600">Portfolio</a></li>
+        <li><a href="#pricing" class="hover:text-teal-600">Harga</a></li>
+        <li><a href="#contact" class="hover:text-teal-600">Kontak</a></li>
+      </ul>
+
+      <!-- Hamburger (Mobile) -->
+      <button id="hamburger" class="md:hidden text-3xl text-gray-700 focus:outline-none">
+        ☰
+      </button>
+    </nav>
+
+    <!-- Menu Mobile -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-md">
+      <ul class="flex flex-col space-y-4 p-6 text-gray-700 font-medium">
+        <li><a href="#home" class="hover:text-teal-600">Beranda</a></li>
+        <li><a href="#about" class="hover:text-teal-600">Tentang</a></li>
+        <li><a href="#portfolio" class="hover:text-teal-600">Portfolio</a></li>
+        <li><a href="#pricing" class="hover:text-teal-600">Harga</a></li>
+        <li><a href="#contact" class="hover:text-teal-600">Kontak</a></li>
+      </ul>
     </div>
+  </header>
 
-    <!-- Menu (Desktop) -->
-    <ul id="menu" class="hidden md:flex space-x-6 text-gray-700 font-medium">
-      <li><a href="#home" class="hover:text-teal-600">Beranda</a></li>
-      <li><a href="#about" class="hover:text-teal-600">Tentang</a></li>
-      <li><a href="#portfolio" class="hover:text-teal-600">Portfolio</a></li>
-      <li><a href="#pricing" class="hover:text-teal-600">Harga</a></li>
-      <li><a href="#contact" class="hover:text-teal-600">Kontak</a></li>
-    </ul>
+  <!-- Hero Section -->
+  <section id="home" class="relative h-screen flex items-center justify-center text-center bg-gray-900">
+    <img src="jawa.jpg" 
+         alt="Hero Background" 
+         class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+    <div class="relative z-10 px-6 max-w-3xl">
+      <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight">
+        Abadikan Momen Terbaik Anda
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed">
+        Fotografi profesional dengan sentuhan budaya Indonesia.
+      </p>
+      <a href="#portfolio" 
+         class="mt-8 inline-block bg-teal-600 text-white px-6 py-3 rounded-full text-lg font-medium shadow-lg hover:bg-teal-700 transition">
+        Lihat Portfolio
+      </a>
+    </div>
+  </section>
 
-    <!-- Hamburger Button -->
-    <button id="hamburger" class="md:hidden text-3xl text-gray-700 focus:outline-none">
-      ☰
-    </button>
-  </nav>
+  <!-- About Section -->
+  <section id="about" class="py-20 md:py-28 bg-white">
+    <div class="container mx-auto px-6 max-w-6xl text-center">
+      <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-6">Tentang Kami</h2>
+      <p class="text-gray-600 leading-loose max-w-3xl mx-auto">
+        Cinta Coding Photography adalah studio fotografi yang lahir dari semangat untuk menghadirkan karya visual
+        yang bukan hanya indah dipandang, tetapi juga penuh makna. Kami percaya bahwa setiap momen, sekecil apa pun itu, 
+        memiliki cerita yang patut diabadikan. Dengan sentuhan budaya Indonesia yang kaya akan warna dan tradisi, 
+        kami berusaha menghadirkan karya yang mampu menyatukan nuansa modern dan kearifan lokal.
+        <br><br>
+        Tim kami terdiri dari fotografer profesional yang berpengalaman dalam berbagai jenis pemotretan, mulai dari
+        pernikahan, prewedding, acara keluarga, hingga portrait personal. Kami selalu berkomitmen memberikan hasil terbaik
+        dengan pendekatan personal, sehingga setiap foto tidak hanya sekadar dokumentasi, melainkan juga menjadi kenangan
+        yang hidup kembali setiap kali Anda melihatnya.
+        <br><br>
+        Dengan dukungan peralatan modern, kreativitas tanpa batas, serta dedikasi tinggi, kami siap membantu Anda
+        mengabadikan momen berharga dengan kualitas terbaik. Karena bagi kami, fotografi bukan hanya pekerjaan, 
+        melainkan sebuah seni untuk merangkai cerita dalam bentuk visual yang abadi.
+      </p>
+    </div>
+  </section>
 
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden md:hidden bg-white shadow-md">
-    <ul class="flex flex-col space-y-4 p-6 text-gray-700 font-medium">
-      <li><a href="#home" class="hover:text-teal-600">Beranda</a></li>
-      <li><a href="#about" class="hover:text-teal-600">Tentang</a></li>
-      <li><a href="#portfolio" class="hover:text-teal-600">Portfolio</a></li>
-      <li><a href="#pricing" class="hover:text-teal-600">Harga</a></li>
-      <li><a href="#contact" class="hover:text-teal-600">Kontak</a></li>
-    </ul>
-  </div>
-</header>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 max-w-6xl text-center">
+      <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-12">Portfolio</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="foto1.jpg" alt="Portfolio 1" class="rounded-xl shadow-md hover:scale-105 transition">
+        <img src="foto2.jpg" alt="Portfolio 2" class="rounded-xl shadow-md hover:scale-105 transition">
+        <img src="foto3.jpg" alt="Portfolio 3" class="rounded-xl shadow-md hover:scale-105 transition">
+        <img src="foto4.jpg" alt="Portfolio 4" class="rounded-xl shadow-md hover:scale-105 transition">
+        <img src="foto5.jpg" alt="Portfolio 5" class="rounded-xl shadow-md hover:scale-105 transition">
+        <img src="foto6.jpg" alt="Portfolio 6" class="rounded-xl shadow-md hover:scale-105 transition">
+      </div>
+    </div>
+  </section>
 
-<!-- Hero Section -->
-<section id="home" class="relative h-screen flex items-center justify-center text-center bg-gray-900">
-  <img src="jawa.jpg" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover" />
-  <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
-  <div class="relative z-10 px-6 max-w-3xl">
-    <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight">Abadikan Momen Terbaik Anda</h1>
-    <p class="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed">Fotografi profesional dengan sentuhan budaya Indonesia.</p>
-    <a href="#portfolio" 
-       class="mt-8 inline-block bg-teal-600 text-white px-6 py-3 rounded-full text-lg font-medium shadow-lg hover:bg-teal-700 transition">
-      Lihat Portfolio
-    </a>
-  </div>
-</section>
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 bg-white">
+    <div class="container mx-auto px-6 max-w-6xl text-center">
+      <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-12">Paket Harga</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Paket Basic -->
+        <div class="bg-gray-100 p-8 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-2xl font-bold text-teal-700 mb-4">Basic</h3>
+          <p class="text-4xl font-bold text-gray-800 mb-6">Rp1.000.000</p>
+          <ul class="text-gray-600 mb-6 space-y-2">
+            <li>✔ 2 Jam pemotretan</li>
+            <li>✔ 20 Foto editing profesional</li>
+            <li>✔ Semua file mentah</li>
+          </ul>
+          <a href="#contact" class="bg-teal-600 text-white px-6 py-3 rounded-full shadow hover:bg-teal-700 transition">
+            Pesan Sekarang
+          </a>
+        </div>
 
-<!-- About Section -->
-<section id="about" class="py-20 md:py-28 bg-white">
-  <div class="container mx-auto px-6 max-w-6xl text-center">
-    <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-6">Tentang Kami</h2>
-    <p class="text-gray-600 leading-loose max-w-3xl mx-auto">
-      Cinta Coding Photography adalah studio fotografi yang lahir dari semangat untuk menghadirkan karya visual
-      yang bukan hanya indah dipandang, tetapi juga penuh makna. Kami percaya bahwa setiap momen, sekecil apa pun itu, 
-      memiliki cerita yang patut diabadikan...
+        <!-- Paket Standard -->
+        <div class="bg-gray-100 p-8 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-2xl font-bold text-teal-700 mb-4">Standard</h3>
+          <p class="text-4xl font-bold text-gray-800 mb-6">Rp2.500.000</p>
+          <ul class="text-gray-600 mb-6 space-y-2">
+            <li>✔ 5 Jam pemotretan</li>
+            <li>✔ 50 Foto editing profesional</li>
+            <li>✔ Semua file mentah</li>
+            <li>✔ Album cetak</li>
+          </ul>
+          <a href="#contact" class="bg-teal-600 text-white px-6 py-3 rounded-full shadow hover:bg-teal-700 transition">
+            Pesan Sekarang
+          </a>
+        </div>
+
+        <!-- Paket Premium -->
+        <div class="bg-gray-100 p-8 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-2xl font-bold text-teal-700 mb-4">Premium</h3>
+          <p class="text-4xl font-bold text-gray-800 mb-6">Rp5.000.000</p>
+          <ul class="text-gray-600 mb-6 space-y-2">
+            <li>✔ Sehari penuh pemotretan</li>
+            <li>✔ 100+ Foto editing profesional</li>
+            <li>✔ Semua file mentah</li>
+            <li>✔ Album cetak + Bingkai</li>
+            <li>✔ Video dokumentasi</li>
+          </ul>
+          <a href="#contact" class="bg-teal-600 text-white px-6 py-3 rounded-full shadow hover:bg-teal-700 transition">
+            Pesan Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 max-w-4xl text-center">
+      <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-12">Kontak Kami</h2>
+      <form action="#" method="POST" class="grid grid-cols-1 gap-6">
+        <input type="text" placeholder="Nama" required class="p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500">
+        <input type="email" placeholder="Email" required class="p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500">
+        <textarea placeholder="Pesan" rows="5" required class="p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500"></textarea>
+        <button type="submit" class="bg-teal-600 text-white px-6 py-3 rounded-full shadow hover:bg-teal-700 transition">
+          Kirim Pesan
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Alamat -->
+  <div class="mt-12 text-center px-6">
+    <h3 class="text-2xl font-bold text-teal-700 mb-4">Alamat Kami</h3>
+    <p class="text-gray-700 mb-6">
+      Jl. Perjuangan No.10B, Karyamulya, Kec. Kesambi, Kota Cirebon, Jawa Barat 45135
     </p>
+    <div class="mx-auto w-full max-w-md h-64 rounded-xl overflow-hidden shadow-md">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.158021237468!2d108.53447337499641!3d-6.989613493007771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ee2a735aaaaab%3A0xf7a9b8e3e9cf2d94!2sJl.%20Perjuangan%20No.10B%2C%20Karyamulya%2C%20Kec.%20Kesambi%2C%20Kota%20Cirebon%2C%20Jawa%20Barat%2045135!5e0!3m2!1sid!2sid!4v1693564050000!5m2!1sid!2sid" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
   </div>
-</section>
 
-<!-- Portfolio, Pricing, Contact, Maps, Footer (tetap sama punyamu) -->
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center mt-12">
+    <p>&copy; Cinta Coding Photography. Semua Hak Dilindungi.</p>
+  </footer>
 
-<!-- Footer -->
-<footer class="bg-gray-900 text-gray-300 py-6 text-center">
-  <p>&copy; Cinta Coding Photography. Semua Hak Dilindungi.</p>
-</footer>
+  <!-- Script Mobile Menu -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-<!-- Script toggle menu -->
-<script>
-  const hamburger = document.getElementById("hamburger");
-  const mobileMenu = document.getElementById("mobileMenu");
-
-  hamburger.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-</script>
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
 
 </body>
 </html>
